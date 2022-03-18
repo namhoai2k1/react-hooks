@@ -1,4 +1,5 @@
 import React from 'react';
+import { StyleNavbar } from './style/Navbar.styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose, faChartBar } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
@@ -12,7 +13,7 @@ function Navbar() {
         console.log(isActive);
     }
     return (
-        <>
+        <StyleNavbar>
             <header>
                 <h1>React Hooks</h1>
                 <div className="nav-box">
@@ -22,14 +23,14 @@ function Navbar() {
                     <nav className={isActive ? 'nav-list active' : 'nav-list'}>
                         <Link to="/">Home</Link>
                         <Link to="usestate">useState</Link>
-                        <Link to="/">Home</Link>
+                        <Link to="useeffect">useEffect</Link>
                         <Link to="/">Home</Link>
                         <Link to="/">Home</Link>
                         <Link to="/">Home</Link>
                     </nav>
                 </div>
             </header>
-        </>
+        </StyleNavbar>
     );
 }
 
