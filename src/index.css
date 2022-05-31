@@ -1,3 +1,11 @@
+:root {
+  --orange: #fba164;
+  --pink-1: #fb829d;
+  --pink-2: #fbadc1;
+  --pink-3: #f95965;
+  --milk: #f7e8dd;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +13,8 @@
 }
 
 body {
-  background-color: #1a1717;
+  background-color: var(--milk);
+  color: var(--milk);
   font-family: 'Roboto', sans-serif;
 }
 

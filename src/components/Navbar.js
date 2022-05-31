@@ -10,7 +10,6 @@ function Navbar() {
 
     const toggle = () => {
         setIsActive(!isActive);
-        console.log(isActive);
     }
     return (
         <StyleNavbar>
@@ -24,7 +23,7 @@ function Navbar() {
                         <Link to="/">Home</Link>
                         <Link to="usestate">useState</Link>
                         <Link to="useeffect">useEffect</Link>
-                        <Link to="/">Home</Link>
+                        <Link to="usereducer">useReducer</Link>
                         <Link to="/">Home</Link>
                         <Link to="/">Home</Link>
                     </nav>
